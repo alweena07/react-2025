@@ -1,0 +1,2 @@
+to run the useEffect() only once, pass the empty array [] as a second parameter in useEffect function.
+

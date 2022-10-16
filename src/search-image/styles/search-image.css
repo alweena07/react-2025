@@ -1,0 +1,36 @@
+
+.user-info{
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 20px;
+    color:white;
+}
+
+  .search-box{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    box-sizing:border-box;
+    height:50px;
+    width:500px;
+    background-color: white;
+    border-radius: 45px;
+    padding:20px;
+    margin-left: 480px;
+    margin-top:80px;
+    box-shadow: 1px 1px 2px gray;
+    
+  }
+  
+  .search-box input {
+      flex: 1;
+      height:35px;
+      border:none;
+      outline:none;
+      font-size:18px;
+  }
+  #icon{
+    color:black
+  }
+
+

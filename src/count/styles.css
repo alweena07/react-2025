@@ -1,0 +1,60 @@
+.center-div{
+    width:25%;
+    height:50vh;
+    background-color:#f4f4f4;
+    box-shadow:5px 5px 20px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 50px;
+}
+
+.main-div{
+   
+   display:flex;
+   flex-direction: row;
+   height:100vh;
+   background: rgb(133, 162, 190);
+}
+
+b{
+    color:rgb(43, 41, 41);
+    background: transparent;
+    font-size: 20px;
+    border-radius:20px;
+    background-color: rgb(8, 160, 109);
+    margin-bottom: 10px;
+    width:50%;
+    height:50px;
+    padding-left: 40px;
+    padding-top:8px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.button-group{
+    min-height: 40px;
+    margin-top:30px;
+    display: flex;
+    justify-content:space-around;
+    
+  
+}
+
+#btn-dlt {
+    margin-left: 50px;
+    height: 38px;
+    width: 55px;
+    box-shadow: none;
+    outline: none;
+}
+
+#btn-add{
+    height: 38px;
+    width: 55px;
+    box-shadow: none;
+    outline: none;
+
+}
