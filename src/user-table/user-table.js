@@ -65,6 +65,7 @@ const UserTable = () => {
       };
       setUsers((prevUsers) => [...prevUsers, { ...updatedNewUser, id: Date.now() }]);
       return updatedNewUser;
+      
     });
   };
 
