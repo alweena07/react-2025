@@ -5,7 +5,7 @@ class RegularComponent extends Component {
         console.log("Regular");
         return (
             <div>
-                Regular Component  {this.props.name}
+                Regular Component :  {this.props.primitiveProp}
             </div>
         );
     }

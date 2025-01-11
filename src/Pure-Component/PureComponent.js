@@ -6,7 +6,9 @@ class PureComp extends PureComponent {
         console.log("Pure");
         return (
             <Fragment>
-               Pure Component {this.props.name}
+               Pure Component : {this.props.userDetails.title}<br/>
+               Pure Component : {this.props.userDetails.name}
+               {/* Pure Component : {this.props.primitiveProp} */}
             </Fragment>
         )
     }

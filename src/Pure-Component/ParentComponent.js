@@ -1,34 +1,46 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import RegularComponent from "./RegularComponent";
 import PureComponent from "./PureComponent";
 
- class ParentComponent extends Component {
-    constructor(props){
-        super(props);
-        this.state ={
-            name:"Alweena",
-        }
-    }
+const obj = { name: "alweena" };
 
-    componentDidMount(){
-        setInterval(() => {
-            this.setState({
-                name:"Alweena"
-            })
-        }, 2000)
-    }
+class ParentComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "Alweena",
+      obj: {
+        name: "alweena",
+        title: "software developer",
+      },
+    };
+  }
 
+  componentDidMount() {
+    setInterval(() => {
+      this.setState({
+        name: "Alweena",
+        obj: {
+          name: "alweena",
+          title: "software developer",
+        },
+      });
+    }, 2000);
+  }
 
-    render() {
-        console.log("Parent");
-        return (
-            <div>
-              Parent Component  
-              <RegularComponent name = {this.state.name} />
-              <PureComponent name = {this.state.name} />
-            </div>
-        )
-    }
+  render() {
+    console.log("Parent");
+    return (
+      <div>
+        <h4>Parent Component</h4>
+        <RegularComponent name={this.state.name} />
+        <PureComponent
+          name={this.state.obj}
+          // name = {obj}
+        />
+      </div>
+    );
+  }
 }
 
-export default ParentComponent
+export default ParentComponent;
